@@ -221,6 +221,8 @@ section h3 {
   margin-top: auto;
   padding-top: 10px;
   display: flex;
+  flex-direction: column;
+  gap: 8px;
   justify-content: center;
 }
 
@@ -719,4 +721,121 @@ footer {
 
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Share button styles */
+.share-button {
+  background-color: var(--primary);
+  color: white;
+  padding: 6px 12px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.share-button:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.share-button .share-icon {
+  font-size: 1rem;
+}
+
+/* Share modal styles */
+#share-modal .modal-content {
+  max-width: 400px;
+}
+
+#share-modal h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.share-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.share-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.facebook-share {
+  background-color: #1877f2;
+  color: white;
+}
+
+.facebook-share:hover {
+  background-color: #165ec5;
+}
+
+.twitter-share {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.twitter-share:hover {
+  background-color: #1a8cd8;
+}
+
+.email-share {
+  background-color: #ea4335;
+  color: white;
+}
+
+.email-share:hover {
+  background-color: #d33426;
+}
+
+.copy-link {
+  background-color: var(--primary);
+  color: white;
+}
+
+.copy-link:hover {
+  background-color: var(--primary-light);
+}
+
+.share-option .share-icon {
+  font-size: 1.2rem;
+}
+
+.close-share-modal {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  line-height: 1;
 }
